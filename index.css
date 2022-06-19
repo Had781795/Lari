@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Nuosu SIL', serif;
+    background-color: hsl(38, 95%, 95%);
+}
+
+.root{
+    height: 200vh;
+}
+
+nav {
+    height: 40px;
+    background-image: linear-gradient(to right, #f0b972, #eba65a, #e79343);
+    display: flex;
+}
+
+.navegacao1{
+    display: flex;
+    width: 30%;
+}
+
+.navegacao2{
+    display: flex;
+    width: 40%;
+}
+
+.navegacao2 ul{
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+
+}
+
+a{
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover{
+    transform: translateY(2px);
+    background-color: #0001;
+    border-bottom: 2px solid black;
+    /* font-size: 22px; */
+   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    font-size: 1.2em;
+}
+
+
+.navegacao3{
+    display: flex;
+    width: 30%;
+}
+
+main{
+    margin-top: 10px;
+}
+
+.carrosel{
+    height: 400px;
+}
+
+.perfil{
+    max-width: 900px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+
+.wrapper{
+
+    display: flex;
+    justify-content: center;
+}
+
+#card{
+    border-radius: 10px;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 7px 0px rgba(204, 195, 180,0.5);
+}
+
+.foto{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-right: 1px solid #cccc;
+}
+
+.foto img{
+    border-radius: 20px;
+    margin: 0 50px;
+}
+
+.info{
+    padding: 30px 50px;
+}
+
+/* PINTRESTO */
+
+.pintrest{
+    padding-top: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Rw{
+    display:flex;
+    flex-wrap:wrap;
+    padding: 0 4px;
+  }
+  .Col{
+    flex:25%;
+    max-width:25%;
+    padding: 0 4px;
+  }
+  .Col img {
+      width: 100%;
+      margin: 4px auto;
+      vertical-align: middle
+  }
+  @media (max-width: 900px) {
+      .Col {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+      }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+      .Col {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+      }
+  }
